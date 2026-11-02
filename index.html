@@ -14,7 +14,7 @@ iframe{position:fixed;left:0;right:0;bottom:0;top:env(safe-area-inset-top,0px);w
 <button id="pasang">📲 Pasang di layar utama</button>
 <script>
 const $=i=>document.getElementById(i);let ev=null;
-const U='https://script.google.com/macros/s/AKfycbxLPhHuhxhkOm-7UAlIBFa6fIO6O9OgXNRwXbQmqhEjJsqNewzswYmcIEv31Jir5W9xyg/exec';let inst=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+const U='https://script.google.com/macros/s/AKfycbyJBy8Wb9cv1aU11RO-1sWCiY2QgNrIvxqt0QJziV3wPKBXbKou7f2YEXYgNaMDO13W/exec';let inst=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
 try{if(inst)localStorage.setItem('sikap_installed','1');else if(localStorage.getItem('sikap_installed'))inst=true}catch(e){}
 const fr=document.createElement('iframe');fr.id='f';fr.title='SIKAP SMANPRO';fr.allow='clipboard-write; fullscreen';
 fr.addEventListener('load',()=>setTimeout(()=>$('l').style.display='none',400));
